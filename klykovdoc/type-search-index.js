@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","u":"allclasses-index.html"},{"p":"klykov.graph","l":"Graph"},{"p":"klykov.assistant","l":"Handler"},{"p":"klykov","l":"Jane"},{"p":"klykov","l":"Main"},{"p":"klykov.graph.traversal","l":"Traversal"},{"p":"klykov.graph.traversal","l":"WidthTraversal"}];updateSearchResults();

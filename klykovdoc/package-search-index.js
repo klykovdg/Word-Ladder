@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"klykov"},{"l":"klykov.assistant"},{"l":"klykov.graph"},{"l":"klykov.graph.traversal"}];updateSearchResults();
