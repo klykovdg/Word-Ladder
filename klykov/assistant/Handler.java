@@ -23,9 +23,9 @@ public class Handler {
      *                 which will be structured according to a specified task and added in the graph
      * @return An object of Graph
      */
-    public static Graph<String> getGraph(String[] rowArray) {
+    public static GraphMap<String> getGraph(String[] rowArray) {
         List<String> rowList = new ArrayList<>(Arrays.asList(rowArray));
-        Graph<String> graph = new Graph<>();
+        GraphMap<String> graph = new GraphMap<>();
         Set<String>  tempBox = new HashSet<>();
         StringBuilder sb;
         String regex;

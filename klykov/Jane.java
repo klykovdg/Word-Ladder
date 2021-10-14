@@ -7,7 +7,7 @@ import  org.jsoup.nodes.*;
 import java.util.*;
 
 /**
- * Class has a package access as its static method performs a particular task.
+ * Class has a package access as its static method performs a particular task needed for the class Main only.
  * The class uses Jsoup library. Its jar file you can find in the folder "resources".
  */
 class Jane {
@@ -33,6 +33,8 @@ class Jane {
         }
         return rowSet;
     }
+
+    private Jane() {}
 
     /**
      * The method receives the book url and reads the book.

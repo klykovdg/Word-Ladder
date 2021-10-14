@@ -15,7 +15,7 @@ public class WidthTraversal<T> implements Traversal<T> {
      * @param help If a user set the flag "help" on true the method will offer some values to choose
      *             when he makes a mistake or input values which are absent in the graph.
      */
-    public WidthTraversal(Graph<T> graph, boolean help) {
+    public WidthTraversal(GraphMap<T> graph, boolean help) {
         this(graph);
         this.help = help;
     }
@@ -149,7 +149,7 @@ public class WidthTraversal<T> implements Traversal<T> {
      * Values do not repeat in the set and values have to have one an adjacent vertex at least.
      * @see "DIVIDER"
      * @see "CONSTRAINTS"
-     * @see klykov.graph.traversal.WidthTraversal#WidthTraversal(Graph, boolean)
+     * @see klykov.graph.traversal.WidthTraversal#WidthTraversal(GraphMap, boolean)
      */
     private void offer(String massage) {
         Set<T> set = new HashSet<>();
