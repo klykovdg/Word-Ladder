@@ -5,6 +5,7 @@ import java.net.*;
 import org.jsoup.*;
 import  org.jsoup.nodes.*;
 import java.util.*;
+import java.util.regex.*;
 
 /**
  * Class has a package access as its static method performs a particular task needed for the class Main only.
@@ -22,11 +23,13 @@ class Jane {
         Document doc = Jsoup.parse(html);
         int line = 1;
         Element e;
+        Pattern p = Pattern.compile("[a-zA-Z]{" + numLetters + "}");
+        String[] array;
 
         while ((e = doc.getElementById("LC" + line++)) != null) {
-            String[] array = e.text().split("\\W");
+            array = e.text().split("\\W");
             for (String s : array) {
-                if (s.matches("[a-zA-Z]{" + numLetters + "}")) {
+                if (p.matcher(s).matches()) {
                     rowSet.add(s);
                 }
             }
